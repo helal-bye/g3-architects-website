@@ -123,6 +123,122 @@ nav ul li a{
   font-size: 16px;
   margin-bottom: 30px;
 }
+.love-and-enjoy-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+}
+.love-and-enjoy-features-section{
+  margin: 120px 0px;
+}
+.love-and-enjoy-features-left h2{
+  font-weight: 700;
+  font-size: 2.81rem;
+  color: #131313;
+  max-width: 460px;
+  margin-bottom: 25px;
+  border-left: 4px solid #ff900e;
+  padding-left: 15px;
+}
+.love-and-enjoy-features-left p{
+  font-weight: 400;
+  color: #727272;
+  margin-bottom: 30px;
+}
+.features-secton-card{
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 20px;
+}
+.features-secton-card h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.features-secton-card p{
+font-weight: 400;
+color: #727272;
+}
+.love-and-enjoy-features-right img{
+  max-width: 100%;
+}
+.love-and-enjoy-features-right{
+  position: relative;
+}
+.ten-year-experience{
+  padding: 45px 40px;
+  background-color: #FF900E;
+  border-radius: 8px;
+  max-width: 340px;
+  position: absolute;
+  bottom: -25px;
+  left: -74px;
+  
+}
+.ten-year-experience h2{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 4.06rem;
+
+}
+.ten-year-experience p{
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.some-fact{
+  margin-bottom: 100px;
+}
+.some-fact h3{
+  font-size: 2.81rem;
+  color: #131313;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.some-fact p{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  width: 50%;
+}
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+  margin-top: 100px;
+}
+.fact-wapper{
+  padding: 50px;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  text-align: center;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fact-wapper p{
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -140,9 +256,13 @@ nav ul li a{
   .flex{
     flex-direction: column-reverse;
   }
-  .team-member-img-wapper{
+  .team-member-img-wapper, .love-and-enjoy-grid,.fact-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
+@media (min-width:577px) and (max-width:992px) {
+    .fact-container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
 
