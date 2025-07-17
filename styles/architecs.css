@@ -78,11 +78,70 @@ nav ul li a{
   max-width: 100%;
 }
 
+/* team member section */
+.flex{
+  display: flex;
+  gap: 70px;
+}
+.team-member-img-wapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.team-member-img-wapper img{
+  max-width: 100%;
+}
+.team-section{
+  margin: 85px 0px;
+}
+.team-member-text-wapper{
+  display: flex;
+  align-items: center;
+}
+.quick-list{
+  font-weight: 500;
+  font-size: 45px;
+  color:#727272;
+}
+.feature{
+  color: #FF900E;
+  font-weight: 700;
+  font-size: 45px;
+}
+.our-of{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.team-member-text h1{
+  max-width: 460px;
+  margin-bottom: 25px;
+}
+.team-member-description{
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
 /* responsive media query */
 
 @media (max-width: 576px) {
   .banner-title{
     font-size: 2rem;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .flex{
+    flex-direction: column-reverse;
+  }
+  .team-member-img-wapper{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
